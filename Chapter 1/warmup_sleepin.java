@@ -21,9 +21,9 @@ public class warmup_sleepin {
 
       
         if(canSleepIn) {
-            System.out.println("You can sleep in!");
+            System.out.println("You can sleep now!");
         } else {
-            System.out.println("You need to wake up!");
+            System.out.println("Get up and be productive!");
         }
 
         scanner.close();
