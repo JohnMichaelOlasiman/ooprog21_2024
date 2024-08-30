@@ -21,7 +21,7 @@ public class warmup_sleepin {
 
       
         if(canSleepIn) {
-            System.out.println("Enjoy your vacation!");
+            System.out.println("Sleepwell!");
         } else {
             System.out.println("Get up and be productive!");
         }
