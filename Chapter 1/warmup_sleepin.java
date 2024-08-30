@@ -10,10 +10,10 @@ public class warmup_sleepin {
         Scanner scanner = new Scanner(System.in);
 
      
-        System.out.print("Is it a weekday? (true/false): ");
+        System.out.print("Is it weekdays? (true/false): ");
         boolean weekday = scanner.nextBoolean();
 
-        System.out.print("Are you on vacation? (true/false): ");
+        System.out.print("Is it considered as vacation? (true/false): ");
         boolean vacation = scanner.nextBoolean();
 
        
@@ -21,7 +21,7 @@ public class warmup_sleepin {
 
       
         if(canSleepIn) {
-            System.out.println("You can sleep now!");
+            System.out.println("Enjoy your vacation!");
         } else {
             System.out.println("Get up and be productive!");
         }
