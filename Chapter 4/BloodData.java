@@ -1,6 +1,6 @@
 public class BloodData {
-   private String bloodType;
-   private String rhFactor;
+   private String bType;  
+   private String rH;     
    
    // Constructor calling the defaultPatient method to set default values
    public BloodData() {
@@ -9,33 +9,33 @@ public class BloodData {
    
    // Method to set default blood type and Rh factor
    public void defaultPatient() {
-      this.bloodType = "A"; 
-      this.rhFactor = "-"; 
+      this.bType = "A";
+      this.rH = "-";
    }
    
-   // Getter for bloodType
-   public String getBloodType() {
-      return bloodType;
+   // Getter for bType
+   public String getBType() {
+      return bType;
    }
    
-   // Setter for bloodType with validation
-   public void setBloodType(String bloodType) {
-      if (bloodType.equals("A") || bloodType.equals("B") || bloodType.equals("AB") || bloodType.equals("O")) {
-         this.bloodType = bloodType;
+   // Setter for bType with validation
+   public void setBType(String bType) {
+      if (bType.equals("A") || bType.equals("B") || bType.equals("AB") || bType.equals("O")) {
+         this.bType = bType;
       } else {
          System.out.println("\tInvalid blood type!!! Please try again.");
       }
    }
    
-   // Getter for rhFactor
-   public String getRhFactor() {
-      return rhFactor;
+   // Getter for rH
+   public String getRH() {
+      return rH;
    }
    
-   // Setter for rhFactor with validation
-   public void setRhFactor(String rhFactor) {
-      if (rhFactor.equals("+") || rhFactor.equals("-")) {
-          this.rhFactor = rhFactor;
+   // Setter for rH with validation
+   public void setRH(String rH) {
+      if (rH.equals("+") || rH.equals("-")) {
+          this.rH = rH;
       } else {
           System.out.println("\tInvalid Rh factor!!! Please try again.");
       }
@@ -43,8 +43,8 @@ public class BloodData {
 
    // New method to display blood information
    public void displayBloodInfo() {
-      System.out.println("\n\tThe Blood type: " + this.bloodType);   
-      System.out.println("\tThe Rh factor: " + this.rhFactor);
-      System.out.printf("\tThe result: %s%s\n", this.bloodType, this.rhFactor);
+      System.out.println("\n\tYour Blood type: " + this.bType);   
+      System.out.println("\tYour Rh factor: " + this.rH);
+      System.out.printf("\tThe result: %s%s\n", this.bType, this.rH);
    }
 }
